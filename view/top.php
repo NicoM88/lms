@@ -9,5 +9,26 @@
 </head>
 <body>
 
+<?php
+// navbar bootstrap
+//dedans si connecté faire bouton déconnexion
+//       sinon si déconnecté bouton connexion
+?>
 
+<!-- création de la navbar-->
+<nav class="navbar navbar-light bg-light">
+    <div style="color: blue"> Accueil </div>
+    <div style="text-align: center; color: blue"> Présentation</div>
+    <!--afficher le message de bienvenue-->
+    <div>
+        <div class="nav-brand" style="background-color: #2ed7cf; float: left;">
+            Bienvenue <?=$USER -> firstname?> <?=$USER -> lastname?>
+        </div>
+        <a class="navbar-brand" href="#">
+        <!--création du bouton déconnection-->
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Déconnection</button>
+        </a>
+    </div>
+
+</nav>
 
